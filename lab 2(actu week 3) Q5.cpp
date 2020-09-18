@@ -23,8 +23,23 @@ struct Employee{
 
 int main(){
 	
-	Address a1={"s-2/8542",6020,"Karachi"};
-	Employee e1={101,"Edward",45000,a1};
+	Address a1;
+	Employee e1;
+	cout<<"Enter details \t"<<endl;
+
+	cout<<"The employeee id  \t";
+	cin>>e1.empid;
+	cout<<"The employee name \t";
+	cin>>e1.emplname;
+	cout<<"The employee salary is\t";
+	cin>>e1.empsalary;
+	cout<<"The employee address is\t";
+	cin>>e1.empaddress.houseno;
+
+	cout<<"The pin is\t";
+	cin>>e1.empaddress.pin;
+	cout<<"The city code is\t";
+	cin>>e1.empaddress.city;
 	if(e1.empsalary<50000){
 	  e1.empsalary+=5000;
 	
@@ -32,6 +47,7 @@ int main(){
 	else{
 		e1.empsalary+=0;
 	}
+	
 	cout<<"The details are\t"<<endl;
 
 	cout<<"The employeee id is \t"<<e1.empid<<endl;
@@ -48,13 +64,9 @@ int main(){
 }
 
 
-
-/*output
-The details are
-The employeee id is     101
-The employee name is    Edward
-The employee salary is  50000
-The employee address is s-2/8542
-The pin is      6020
-The city code is        Karachi
-*/
+/*   101
+Enter Employee Name : Afrazkhan
+Enter Employee Salary : 45000
+Enter Employee House No : 4598/D
+Enter Employee City : Karachi
+Enter Employee Pin Code : 15456*/
